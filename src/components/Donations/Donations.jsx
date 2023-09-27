@@ -24,7 +24,7 @@ const Donations = () => {
             }
             setAppliedDonations(donationsApplied);
         }
-    },[donations])
+    },[])
 
     return (     
         <div>
@@ -40,7 +40,7 @@ const Donations = () => {
          
             <div className={dataLength === appliedDonations.length ? 'hidden' : ''}>
                 <button onClick={() => setDataLength(appliedDonations.length)} 
-                    className="btn btn-primary">See All</button>
+                    className="btn btn-primary mx-auto p-10">See All</button>
             </div>
         </div>
     );

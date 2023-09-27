@@ -22,19 +22,22 @@ const DonationDetails = () => {
     return (
         <div>
             <div>
-                <div className="p-8 relative">
-                    <img className="h-[550px] w-[1100px] ml-20" src={image} alt="" />
-                        <div className="absolute donate-bg h-32 w-[1100] -mt-32 right-[136px] left-[110px]">
+                <div className="pl-8 relative mt-8 md:ml-40 md:mt-10 lg:ml-16 justify-center">
+                    <img className="w-[312px] ml-5 lg:h-[550px] lg:w-[1100px]" src={image} />
+                        <div className="absolute donate-bg h-16 w-[312px] -mt-16 ml-5 lg:h-32 lg:w-[1100px] 
+                            lg:-mt-32">
                              <button onClick={handleApplyDonate} 
-                            className="btn ml-10 mt-10 text-white border-0" 
+                                className="p-2 ml-10 mt-3 rounded-md border-0 text-white lg:btn lg:mt-10 
+                                lg:border-0 lg:text-white" 
                             style={{backgroundColor:text_color}}>Donate<span>{price}TK</span></button>
                         </div>
                 </div>
                
             </div>
             <div>
-                <h1 className="text-4xl font-bold p-6">{title}</h1>
-                <p className="text-[16] text-[hsl(0,0%,64%)] text-justify px-6 pb-8">{description}</p>
+                <h1 className="text-center  lg:text-left text-4xl font-bold p-8 lg:ml-20">{title}</h1>
+                <p className="text-[hsl(0,0%,64%)] text-sm text-justify p-8 pb-8 lg:text-[16] lg:text-justify lg:ml-20 lg:py-5 
+                        lg:pl-8 lg:pr-[124px]">{description}</p>
             </div>
             <ToastContainer />
         </div>
