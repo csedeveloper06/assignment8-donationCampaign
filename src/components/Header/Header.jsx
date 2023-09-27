@@ -26,7 +26,7 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="w-30">
-                        <img src="../../../images/Logo.png" />
+                        <img src="https://i.ibb.co/GWKBt9t/Logo.png" />
                     </div>
                 </div>
                 <div className="navbar-end hidden lg:flex">
